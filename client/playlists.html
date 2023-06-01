@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Playlists | Mixed Sounds</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- font imports -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/playlists.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Bootstrap imports -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/default.css">
+    
+  </head>
+ <body>
+
+    <div class="navbarcontainer">
+    
+      <div id="menuButton">
+        <img id="menuIcon" src="images/hamburgerIconDark.png" />
+      </div>
+
+      <div id="navbar">
+        <ul>
+          <a href="/home"><li>Home</li></a>
+          <a href="/history"><li>Listening History</li></a>
+          <a href="/playlists"><li id="currPage">Playlists</li></a>
+          <a href="/"><li id="logout">Log out</li></a>
+        </ul>
+      </div>
+      
+     </div>
+    
+    <h1 id="pageTitle">Playlists</h1>
+
+    <div id="gridContainer">
+
+      <div id="playlists">
+
+         <!--
+        <div class="col-1"><div class="square" style="background-color:#BCE2E9"></div></div>
+        <div class="col-2">Country Favorites</div>
+
+        <div class="col-1"><div class="square" style="background-color:#FDD42E"></div></div>
+        <div class="col-2">Dance Songs</div>
+
+        <div class="col-1"><div class="square" style="background-color:#F49E67"></div></div>
+        <div class="col-2">Sad Bangerz</div>
+
+        <div class="col-1"><div class="square" style="background-color:#fde5d7"></div></div>
+        <div class="col-2">Add to a playlist</div>
+
+        -->
+
+      </div>
+
+      <div id="playlistinfo">
+
+        <div id="playlist-title"></div>
+
+        <div id="playlisticons">
+
+          <div class="music-icon">
+            <img class="icon" src="./images/playbutton.png">
+            <label>Play</label>
+          </div>
+  
+          <div class="music-icon">
+            <img class="icon" src="./images/volumeicon.png">
+            <label>Volume</label>
+          </div>
+
+          <div class="music-icon">
+            <img class="icon" id="shuffle" src="./images/shufflebutton.png">
+            <label>Shuffle</label>
+          </div>
+
+          <div class="music-icon">
+            <img class="icon" src="./images/addicon.png">
+            <label>Export</label>
+          </div>
+
+        </div>
+
+        <div id="songs">
+
+          <!--<div class="song">
+            <h6>Take Me Home</h6>
+          </div>
+      
+          <div class="song">
+            <h6>Hannah Montana Theme song</h6>
+          </div>-->
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script type="module" src="js/playlists.js"></script>
+    <script type="module" src="js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.songEntry {
+  background-color: #FFFBF6dd;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 1000px;
+  max-width: 90vw;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: #6C8E8E;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: fit-content(70%) auto;
+  justify-content: space-evenly;
+}
+
+.info, .rating, .comment {
+  margin: auto;
+  padding: 20px;
+}
+
+.info {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.info * {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.title, .album {
+  font-style: italic;
+}
+.title, .genre {
+  font-weight: 600;
+}
+.title {
+  font-size: 20pt;
+}
+.artist {
+  font-size: 16pt;
+}
+.album {
+  font-size: 14pt;
+}
+.genre {
+  font-size: 11pt;
+}
+
+.rating img {
+  float: left;
+  width: 50px;
+  opacity: 0.35;
+  margin: 3px;
+}
+.rating img.selected {
+  opacity: 1;
+}

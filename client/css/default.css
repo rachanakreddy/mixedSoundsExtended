@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap');
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: overlay;
+
+  background-image: url('../images/appBackground.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #FFFBF6;
+}
+
+.solid-bg {
+  background-color: #FFFBF6dd;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6C8E8E;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.invisible {
+  display: none;
+}
+.visible {
+  display: inline;
+}
+
+#menuButton {
+  position: absolute;
+  z-index: 11;
+  cursor: pointer;
+  padding: 45px;
+}
+#menuIcon {
+  height: 25px;
+  width: 50px;
+}
+#menuIcon:active {
+  opacity: 0.5;
+}
+
+.navbarcontainer {
+  height: 120px;
+  width: 100vw;
+  display: flex;
+}
+
+#navbar {
+  background-color: #FFFBF6dd;
+  padding-left: 140px;    /* TODO: change this to be based on menu icon size */
+  width: 100vw;
+  z-index: 10;
+}
+#navbar ul {
+  display: inline;
+  list-style: none;
+}
+#navbar li {
+  float: left;
+  padding: 45px;
+  color: black;
+}
+#navbar li:hover {
+  color: black;
+  text-decoration: underline;
+  color: #6C8E8E;
+}
+#navbar li:active {
+  color: #f0794d;
+  text-decoration: underline;
+}
+#navbar li#currPage {
+  background-color: #FFFBF6;
+  text-decoration: underline;
+}
+#navbar li#logout {
+  float: right;
+}
+
+#pageTitle {
+  padding: 35px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 600;
+  font-style: italic;
+  color: #fffbf6;
+  -webkit-text-stroke: 1px #6C8E8E;
+}
+
+.btn-default {
+  background-color: #ED5A24 !important;
+  color: #FFFBF6 !important;
+  border-radius: 25px !important;
+  width: 125px;
+}
+
+.btn-default:hover {
+  background-color: #D6450F !important;
+}
+
+input {
+  width: 250px;
+  text-indent: 10px;
+  border-radius: 25px;
+  background-color: #FFF9F0;
+  border-width:0.03cm;
+  border-color: black;
+}
+
+textarea {
+  min-height: 400px !important;
+  min-width: 800px !important;
+  border-radius: 25px;
+  text-indent: 20px;
+  background-color: #FFF9F0;
+  border-width: 0.03cm;
+  border-color: black;
+}

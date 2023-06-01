@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home | Mixed Sounds</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Bootstrap imports -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/mainpage.css">
+    
+  </head>
+  <body>
+
+    <!--navbar-->
+    <div class="navbarcontainer">
+      <div id="menuButton">
+        <img id="menuIcon" src="images/hamburgerIconDark.png" />
+      </div>
+      <div id="navbar">
+        <ul>
+          <a href="/home"><li id="currPage">Home</li></a>
+          <a href="/history"><li>Listening History</li></a>
+          <a href="/playlists"><li>Playlists</li></a>
+          <a href="/"><li id="logout">Log out</li></a>
+        </ul>
+      </div> 
+    </div>
+
+    <!--album-->
+    <div class="flexContainer">
+      <div><button class="btn btn-lg"><img class="skip-button" src="images/skipbutton_back.png"></button></div>
+      <div id="album-image"></div>
+      <div><button id="nextbutton" class="btn btn-lg"><img class="skip-button" src="images/skipbutton.png"></button></div>
+    </div>
+
+    <div class="solid-bg">
+
+      <!--Song info with title and artist-->
+      <div class="flexContainer">
+        <div class="marquee">
+          <div id="songtitle" class="title"></div>
+        </div>
+      </div>
+      <div class="flexContainer">
+        <div id="artists" class="artist"></div>
+      </div>
+
+      <!--Music play tools-->
+      <div class="flexContainer">
+        <div class="music-icon">
+          <img id="replayicon" class="icon" src="./images/replaybutton.png">
+          <label>Replay</label>
+        </div>
+
+        <div class="music-icon">
+          <img id="volumeicon" class="icon" src="./images/volumeicon.png">
+          <label>Volume</label>
+        </div>
+
+        <div class="music-icon">
+          <img class="icon" id="addicon" src="./images/addicon.png">
+
+            <div id="playlists_dropdown" class="dropdown-content"></div>
+
+          <label>Add to playlist</label>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <div id="selectedGenre">Genre</div>
+            <div id="arrow"></div>
+          </button>
+          <div id="genres" class="dropdown-content">
+            <a class="genre">Random</a>
+            <a class="genre">Pop</a>
+            <a class="genre">Rap</a>
+            <a class="genre">Country</a>
+            <a class="genre">Rock</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Rating-->
+      <div class="flexContainer">
+          <div class="sub-title">What did you think?</div>
+      </div>
+
+      <div class="flexContainer">
+        <div>
+          <img id="1star" class="smileyface" title="what was that" src="./images/1star.png">
+        </div>
+        <div>
+            <img id="2star" class="smileyface" title="not a fan" src="./images/2star.png">
+        </div>
+        <div>
+            <img id="3star" class="smileyface" title="not bad not bad" src="./images/3star.png"> 
+        </div>
+        <div>
+          <img id="4star" class="smileyface" title="lovely song" src="./images/4star.png">
+        </div>
+        <div>
+          <img id="5star" class="smileyface" title="OBSESSED" src="./images/5star.png">
+        </div>
+      </div>
+
+      <!--comments-->
+      <div class="flexContainer">
+        <div>
+          <label style="text-indent: 10px">Comments (optional)</label>
+          <br />
+          <textarea id="comment" type="text"></textarea>
+        </div>
+      </div>
+
+      <!--submit-->
+      <div class="flexContainer">
+        <button id="submit" class="btn btn-default" type="submit">Submit</button>
+      </div>
+    
+    </div>
+    
+    <script type="module" src="js/menu.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

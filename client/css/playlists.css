@@ -1,0 +1,78 @@
+#gridContainer {    /* class name 'container' conflicts w/Bootstrap */
+    min-width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.square {
+    min-height: 50px;
+    min-width: 50px;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+  }
+
+  #playlists {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    margin-top: 150px;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  #playlistinfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #playlisticons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .song {
+    padding: 10px;
+    margin-left: 75px;
+  }
+
+  .col-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-left: 75px;
+  }
+
+  .col-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 20px;
+  }
+
+.title {
+    position: absolute;
+    padding-left: 50%;
+    left: 50%;
+}
+
+#playlist-title {
+    font-size: 70px;
+    color: #2E4441;
+}
+
+.music-icon {
+    padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.icon:hover, .square:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
